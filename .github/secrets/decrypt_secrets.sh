@@ -10,7 +10,7 @@ cp ./.github/secrets/PROVISIONING_PROFILE.mobileprovision ~/Library/MobileDevice
 
 
 security create-keychain -p "" build.keychain
-security import ./.github/secrets/BUILD_CERTIFICATE.p12 -t agg -k ~/Library/Keychains/build.keychain -P "" -A
+security import ./.github/secrets/BUILD_CERTIFICATE.p12 -P "$P12_PASSWORD" -t agg -k ~/Library/Keychains/build.keychain -P "" -A
 
 security list-keychains -s ~/Library/Keychains/build.keychain
 security default-keychain -s ~/Library/Keychains/build.keychain
