@@ -25,7 +25,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pods-
       - name: CocoaPod Install
-          run: pod install
+        run: pod install
       - name: Archiving project
         run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
