@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A06DC411D5CFCFDBEF177F /* Pods_muredan_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0B21D75F2889C6C32C6C1D /* Pods_muredan_ios.framework */; };
 		BB90BE6D2912A60B00D0B025 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB90BE6C2912A60B00D0B025 /* ExportOptions.plist */; };
 		BBE35934291165CA006813D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE35933291165CA006813D2 /* AppDelegate.swift */; };
 		BBE35936291165CA006813D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE35935291165CA006813D2 /* SceneDelegate.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E0B21D75F2889C6C32C6C1D /* Pods_muredan_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muredan_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC7A0FDAA0AE29CB61C209E /* Pods-muredan.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.debug.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.debug.xcconfig"; sourceTree = "<group>"; };
 		BB90BE6C2912A60B00D0B025 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
 		BBE35930291165CA006813D2 /* muredan.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muredan.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE35933291165CA006813D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		BBE3593C291165CB006813D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBE3593F291165CB006813D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE35941291165CB006813D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4812939F40D5485C525C87 /* Pods-muredan.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.release.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A06DC411D5CFCFDBEF177F /* Pods_muredan_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A55951619047185BCF1243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E0B21D75F2889C6C32C6C1D /* Pods_muredan_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6EDE171B27FDF22670C16B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EC7A0FDAA0AE29CB61C209E /* Pods-muredan.ios.debug.xcconfig */,
+				FC4812939F40D5485C525C87 /* Pods-muredan.ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BBE35927291165CA006813D2 = {
 			isa = PBXGroup;
 			children = (
 				BBE35932291165CA006813D2 /* muredan.ios */,
 				BBE35931291165CA006813D2 /* Products */,
+				A6EDE171B27FDF22670C16B5 /* Pods */,
+				24A55951619047185BCF1243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE35944291165CB006813D2 /* Build configuration list for PBXNativeTarget "muredan.ios" */;
 			buildPhases = (
+				6726D6166BC7CF69E9B3639B /* [CP] Check Pods Manifest.lock */,
 				BBE3592C291165CA006813D2 /* Sources */,
 				BBE3592D291165CA006813D2 /* Frameworks */,
 				BBE3592E291165CA006813D2 /* Resources */,
+				A6F15B131F8440457F1CF63F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6726D6166BC7CF69E9B3639B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-muredan.ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F15B131F8440457F1CF63F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-muredan.ios/Pods-muredan.ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-muredan.ios/Pods-muredan.ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-muredan.ios/Pods-muredan.ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBE3592C291165CA006813D2 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		BBE35945291165CB006813D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC7A0FDAA0AE29CB61C209E /* Pods-muredan.ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +370,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +390,7 @@
 		};
 		BBE35946291165CB006813D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4812939F40D5485C525C87 /* Pods-muredan.ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -5,6 +5,7 @@
 //  Created by Dan Muresan on 01.11.2022.
 //
 
+import RxSwift
 import UIKit
 
 class ViewController: UIViewController {
