@@ -17,6 +17,10 @@ jobs:
           BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: ./.github/scripts/decrypt_secrets.sh
+      - name: Install Dependences
+        run: |
+          brew install cocoapods
+          pod install
       - name: Archiving project
         run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
