@@ -8,6 +8,7 @@ SCHEME=muredan.ios
 
 # buiild & archive
 xcodebuild -workspace $WORKSPACE \
+            -allowProvisioningUpdates \
             -scheme $SCHEME \
             -sdk iphoneos \
             -configuration AppStoreDistribution \
