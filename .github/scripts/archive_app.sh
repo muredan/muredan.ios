@@ -11,6 +11,5 @@ xcodebuild -workspace $WORKSPACE \
             -scheme $SCHEME \
             -sdk iphoneos \
             -configuration AppStoreDistribution \
-            -allowProvisioningUpdates
             -archivePath $PWD/build/muredan.ios.xcarchive \
             clean archive | xcpretty
