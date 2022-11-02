@@ -3,7 +3,7 @@
 set -eo pipefail
 
 xcodebuild -exportArchive \
-            -allowProvisioningUpdates
+            -allowProvisioningUpdates \
             -archivePath $PWD/build/muredan.ios.xcarchive \
             -exportOptionsPlist muredan.ios/ExportOptions.plist \
             -exportPath $PWD/build
