@@ -12,5 +12,5 @@ xcodebuild -workspace $WORKSPACE \
             -scheme $SCHEME \
             -sdk iphoneos \
             -configuration Release \
-            # -archivePath $ARCHIVE_PATH \
-            # clean archive | xcpretty
+            -archivePath $ARCHIVE_PATH \
+            clean archive | xcpretty
