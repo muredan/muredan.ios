@@ -4,7 +4,14 @@
 <dict>
 	<key>method</key>
 	<string>app-store</string>
-	<key>teamID</key>
-	<string>VQ5S8853A4</string>
+	<key>uploadBitcode</key>
+	<true/>
+	<key>uploadSymbols</key>
+	<true/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>muredan-ios.provisioning.profile</key>
+		<string>match AppStore muredan-ios.provisioning.profile</string>
+	</dict>
 </dict>
 </plist>
