@@ -2,10 +2,15 @@
 
 set -eo pipefail
 
+# create variables
+WORKSPACE=muredan.ios.xcworkspace
+SCHEME=muredan.ios
+ARCHIVE_PATH=build/muredan.ios
+
 # buiild & archive
-xcodebuild -workspace muredan.ios.xcworkspace \
+xcodebuild -workspace $WORKSPACE \
             -allowProvisioningUpdates \
-            -scheme muredan.ios \
+            -scheme $SCHEME \
             -sdk iphoneos \
             -configuration AppStoreDistribution \
-            -archivePath $PWD/build/muredan.ios.xcarchive archive
+            -archivePath $ARCHIVE_PATH archive
