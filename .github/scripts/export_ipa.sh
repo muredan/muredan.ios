@@ -2,6 +2,7 @@
 
 set -eo pipefail
 
+# export ipa
 xcodebuild -exportArchive \
             -allowProvisioningUpdates \
             -archivePath $PWD/build/muredan.ios.xcarchive \
