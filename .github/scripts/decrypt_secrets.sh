@@ -16,7 +16,7 @@ security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
 security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
 
 #import certificate to keychain
-#security import $CERTIFICATE_PATH -t agg -k $KEYCHAIN_PATH -P "$P12_PASSWORD" -A
+security import $CERTIFICATE_PATH -t agg -k $KEYCHAIN_PATH -P "$P12_PASSWORD" -A
 #security list-keychain -d user -s $KEYCHAIN_PATH
 
 
