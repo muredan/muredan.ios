@@ -12,6 +12,6 @@ xcodebuild -workspace $WORKSPACE \
             -scheme $SCHEME \
             -sdk iphoneos \
             -configuration Release \
-            -derivatedDataPath DerivedData
+            -derivedDataPath DerivedData
             -archivePath ARCHIVE_PATH \
             clean archive | xcpretty
