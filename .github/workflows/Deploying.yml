@@ -18,8 +18,12 @@ jobs:
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: ./.github/scripts/decrypt_secrets.sh
       - name: Install Dependences
-        run: |
-          pod install
+        - uses: actions/cache@v1
+          with:
+            path: Pods
+            key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+            restore-keys: |
+              ${{ runner.os }}-pods-
       - name: Archiving project
         run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
