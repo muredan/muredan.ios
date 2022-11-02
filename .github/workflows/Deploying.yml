@@ -18,7 +18,7 @@ jobs:
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: ./.github/scripts/decrypt_secrets.sh
       - name: Install Dependences
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: Pods
           key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
