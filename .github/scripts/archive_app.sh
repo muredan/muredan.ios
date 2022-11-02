@@ -11,4 +11,4 @@ xcodebuild -workspace $WORKSPACE \
             -scheme $SCHEME \
             -sdk iphoneos \
             -configuration AppStoreDistribution \
-            -archivePath $PWD/build/muredan.ios.xcarchive archive 
+            -archivePath $PWD/build/muredan.ios.xcarchive archive
