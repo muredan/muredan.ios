@@ -19,7 +19,6 @@ security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
 security import $CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
 security list-keychains -s $KEYCHAIN_PATH
 security default-keychain -s $KEYCHAIN_PATH
-security set-key-partition-list -S apple-tool:,apple: -s -k "$P12_PASSWORD" $KEYCHAIN_PATH
 
 # apply provisioning profile
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
