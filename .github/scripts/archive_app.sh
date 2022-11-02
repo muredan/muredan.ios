@@ -11,7 +11,6 @@ ARCHIVE_PATH=$PWD/build/muredan.ios.xcarchive
 xcodebuild -workspace $WORKSPACE \
             -scheme $SCHEME \
             -sdk iphoneos \
-            -allowProvisioningUpdates \
             -configuration Release \
             # -archivePath $ARCHIVE_PATH \
             # clean archive | xcpretty
