@@ -26,25 +26,25 @@ jobs:
             ${{ runner.os }}-pods-
       - name: CocoaPod Install
         run: pod install
-      - name: Archiving project
-        uses: sersoft-gmbh/xcodebuild-action@v2
-        with:
-          action: archive
-          workspace: muredan.ios.xcworkspace
-          scheme: muredan.ios
-          sdk: iphoneos
-          build-settings: >
-            -archivePath build/muredan.ios.xcarchive
-          derived-data-path: build/derivedData
-          destination: generic/platform=iOS
-      - name: Exporting .ipa
-        run: ./.github/scripts/export_ipa.sh
-      - name: Publishing app
-        if: success()
-        env:
-          APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
-          APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
-        run: ./.github/scripts/publish_testflight.sh
+      # - name: Archiving project
+      #   uses: sersoft-gmbh/xcodebuild-action@v2
+      #   with:
+      #     action: archive
+      #     workspace: muredan.ios.xcworkspace
+      #     scheme: muredan.ios
+      #     sdk: iphoneos
+      #     build-settings: >
+      #       -archivePath build/muredan.ios.xcarchive
+      #     derived-data-path: build/derivedData
+      #     destination: generic/platform=iOS
+      # - name: Exporting .ipa
+      #   run: ./.github/scripts/export_ipa.sh
+      # - name: Publishing app
+      #   if: success()
+      #   env:
+      #     APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
+      #     APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
+      #   run: ./.github/scripts/publish_testflight.sh
       - name: Clean up keychain and provisioning profile
         if: ${{ always() }}
         run: |
