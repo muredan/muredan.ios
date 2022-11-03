@@ -58,7 +58,6 @@
 				3EC7A0FDAA0AE29CB61C209E /* Pods-muredan.ios.debug.xcconfig */,
 				FC4812939F40D5485C525C87 /* Pods-muredan.ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -361,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = VQ5S8853A4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = muredan.ios/Info.plist;
@@ -397,7 +396,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VQ5S8853A4;
 				GENERATE_INFOPLIST_FILE = YES;
