@@ -27,16 +27,17 @@ jobs:
       - name: CocoaPod Install
         run: pod install
       - name: Archiving project
-        uses: sersoft-gmbh/xcodebuild-action@v2
-        with:
-          action: archive
-          workspace: muredan.ios.xcworkspace
-          scheme: muredan.ios
-          sdk: iphoneos
-          build-settings: >
-            -archivePath build/muredan.ios.xcarchive
-          derived-data-path: build/derivedData
-          destination: generic/platform=iOS
+        run: ./.github/scripts/archive_app
+        # uses: sersoft-gmbh/xcodebuild-action@v2
+        # with:
+        #   action: archive
+        #   workspace: muredan.ios.xcworkspace
+        #   scheme: muredan.ios
+        #   sdk: iphoneos
+        #   build-settings: >
+        #     -archivePath build/muredan.ios.xcarchive
+        #   derived-data-path: build/derivedData
+        #   destination: generic/platform=iOS
       - name: Exporting .ipa
         run: ./.github/scripts/export_ipa.sh
       - name: Publishing app
