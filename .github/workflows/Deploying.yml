@@ -21,7 +21,7 @@ jobs:
           security unlock-keychain -p "1234" build.keychain
           security import certificate.p12 -k build.keychain -P $MACOS_CERTIFICATE_PWD -T /usr/bin/codesign
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "1234" build.keychain
-          /usr/bin/codesign --force -s VQ5S8853A4 ./muredan.ios.xcworkspace -v
+          /usr/bin/codesign --force -s VQ5S8853A4 ./muredan.ios.xcodeproj -v
       - name: Retrieve Dependencies Cache
         uses: actions/cache@v3
         with:
