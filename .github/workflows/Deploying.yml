@@ -1,0 +1,36 @@
+name: Deploying
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploying to Testflight
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Retrieve Dependencies Cache
+        uses: actions/cache@v3
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+      - name: CocoaPod Install
+        run: pod install
+      - name: Archiving project
+        run: ./.github/scripts/archive_app.sh
+      - name: Exporting .ipa
+        run: ./.github/scripts/export_ipa.sh
+      - name: Publishing app
+        if: success()
+        env:
+          APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
+          APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
+        run: ./.github/scripts/publish_testflight.sh
+      - name: Clean up keychain and provisioning profile
+        if: ${{ always() }}
+        run: |
+          security delete-keychain $RUNNER_TEMP/build.keychain
+          rm ~/Library/MobileDevice/Provisioning\ Profiles/build_pp.mobileprovision
