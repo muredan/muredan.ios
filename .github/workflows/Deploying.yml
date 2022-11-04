@@ -17,6 +17,10 @@ jobs:
       #     BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
       #     KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
       #   run: ./.github/scripts/decrypt_secrets.sh
+      - name: "Select Xcode 12.0.0"
+        uses: devbotsxyz/xcode-select@master
+        with:
+          version: "12.0.0"
       - name: "Import Certificate: Development"
         uses: devbotsxyz/import-signing-certificate@main
         with:
