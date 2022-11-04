@@ -10,30 +10,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
-      # - name: Install the Apple certificate and provisioning profile
-      #   env:
-      #     BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
-      #     P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
-      #     BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
-      #     KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
-      #   run: ./.github/scripts/decrypt_secrets.sh
-      - name: "Select Xcode 12.0.0"
-        uses: devbotsxyz/xcode-select@v1
-        with:
-          version: "13.1"
-      - name: "Import Certificate: Development"
-        uses: devbotsxyz/import-signing-certificate@main
-        with:
-          certificate-data: ${{ secrets.DEVELOPMENT_CERTIFICATE_DATA }}
-          certificate-passphrase: ${{ secrets.P12_PASSWORD }}
-          keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }}
-
-      - name: "Import Certificate: Distribution"
-        uses: devbotsxyz/import-signing-certificate@main
-        with:
-          certificate-data: ${{ secrets.DISTRIBUTION_CERTIFICATE_DATA }}
-          certificate-passphrase: ${{ secrets.P12_PASSWORD }}
-          keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }}
+      - name: Install the Apple certificate and provisioning profile
+        env:
+          BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: ./.github/scripts/decrypt_secrets.sh
       - name: Retrieve Dependencies Cache
         uses: actions/cache@v3
         with:
@@ -44,17 +27,17 @@ jobs:
       - name: CocoaPod Install
         run: pod install
       - name: Archiving
-        run: ./.github/scripts/archive_app.sh
-        # uses: sersoft-gmbh/xcodebuild-action@v2
-        # with:
-        #   action: archive
-        #   workspace: muredan.ios.xcworkspace
-        #   scheme: muredan.ios
-        #   sdk: iphoneos
-        #   build-settings: >
-        #     -archivePath build/muredan.ios.xcarchive
-        #   derived-data-path: build/derivedData
-        #   destination: generic/platform=iOS
+        # run: ./.github/scripts/archive_app.sh
+        uses: sersoft-gmbh/xcodebuild-action@v2
+        with:
+          action: archive
+          workspace: muredan.ios.xcworkspace
+          scheme: muredan.ios
+          sdk: iphoneos
+          build-settings: >
+            -archivePath build/muredan.ios.xcarchive
+          derived-data-path: build/derivedData
+          destination: generic/platform=iOS
       # - name: "Archive"
       #   uses: devbotsxyz/xcode-archive@v1
       - name: Exporting .ipa
