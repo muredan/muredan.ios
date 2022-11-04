@@ -10,6 +10,15 @@ jobs:
     runs-on: self-hosted
 
     steps:
+    - name: Retrieve Dependencies Cache
+      uses: actions/cache@v3
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-pods-
+    - name: CocoaPod Install
+      run: pod install
     - uses: actions/checkout@v3
     - name: Build App
       run: ./.github/scripts/archive_app.sh
