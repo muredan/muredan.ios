@@ -9,10 +9,9 @@ ARCHIVE_PATH=build/muredan.ios
 
 # buiild & archive
 xcodebuild -workspace $WORKSPACE \
+            -allowProvisioningUpdates \
             -scheme $SCHEME \
-            -destination "generic/platform=iOS" \
-            -configuration Release build CODE_SIGNING_ALLOWED=NO
-            # -archivePath $ARCHIVE_PATH archive \
-            # -allowProvisioningUpdates \
-            # -derivedDataPath build/DerivedData \
-            
+            -sdk iphoneos \
+            -configuration AppStoreDistribution \
+            -derivedDataPath build/DerivedData \
+            -archivePath $ARCHIVE_PATH archive
