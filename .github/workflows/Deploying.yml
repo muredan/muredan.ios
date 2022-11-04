@@ -21,14 +21,14 @@ jobs:
         uses: devbotsxyz/import-signing-certificate@main
         with:
           certificate-data: ${{ secrets.DEVELOPMENT_CERTIFICATE_DATA }}
-          certificate-passphrase: ${{ secrets.KEYCHAIN_PASSWORD }}
+          certificate-passphrase: ${{ secrets.P12_PASSWORD }}
           keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }}
 
       - name: "Import Certificate: Distribution"
         uses: devbotsxyz/import-signing-certificate@main
         with:
           certificate-data: ${{ secrets.DISTRIBUTION_CERTIFICATE_DATA }}
-          certificate-passphrase: ${{ secrets.KEYCHAIN_PASSWORD }}
+          certificate-passphrase: ${{ secrets.P12_PASSWORD }}
           keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }}
       - name: Retrieve Dependencies Cache
         uses: actions/cache@v3
