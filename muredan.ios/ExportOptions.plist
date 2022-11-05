@@ -5,11 +5,6 @@
 <plist version="1.0">
 <dict>
 	<key>method</key>
-	<string>app-store</string>
-	<key>provisioningProfiles</key>
-	<dict>
-		<key>muredan.muredan-ios</key>
-		<string>muredan.muredan-ios.provisioning.profile</string>
-	</dict>
+	<string>app-store</string
 </dict>
 </plist>
