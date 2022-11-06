@@ -18,7 +18,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pods-
       - name: CocoaPod Install
-        run: pod install
+        run: LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 pod install
       - name: Archiving project
         run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
