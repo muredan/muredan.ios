@@ -12,6 +12,6 @@ xcodebuild -workspace $WORKSPACE \
             -allowProvisioningUpdates \
             -scheme $SCHEME \
             -sdk iphoneos \
-            -derivedDataPath build/DerivedData
+            -derivedDataPath build/DerivedData \
             -configuration AppStoreDistribution \
             -archivePath $ARCHIVE_PATH archive
