@@ -23,7 +23,7 @@ jobs:
         uses: sersoft-gmbh/xcodebuild-action@v2
         with:
           action: archive
-          workspace: muredan.ios
+          workspace: muredan.ios.xcworkspace
           scheme: muredan.ios
           sdk: iphoneos
           build-settings: >
