@@ -20,7 +20,7 @@ jobs:
       - name: Text
         run: locale
       - name: CocoaPod Install
-        run: LANG=en_US.UTF-8 pod install
+        run: pod install
       - name: Archiving project
         run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
