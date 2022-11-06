@@ -17,6 +17,8 @@ jobs:
           key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-pods-
+      - name: Text
+        run: locale
       - name: CocoaPod Install
         run: LANG=en_US.UTF-8 pod install
       - name: Archiving project
