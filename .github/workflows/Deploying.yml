@@ -21,9 +21,8 @@ jobs:
         run: |
           export LC_ALL=en_US.UTF-8
           locale
-      - name: Locale
-      run: |
-          locale
+      - name: Locale 2
+      run: locale
       - name: CocoaPod Install
         run: pod install
       - name: Archiving project
