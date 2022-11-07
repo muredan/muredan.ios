@@ -27,8 +27,8 @@ jobs:
         run: pod install
       - name: Archiving project
         run: |
-        locale
-        ./.github/scripts/archive_app.sh
+          locale
+          ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
         run: ./.github/scripts/export_ipa.sh
       - name: Publishing app
