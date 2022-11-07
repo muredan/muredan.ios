@@ -18,7 +18,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pods-
       - name: Locale
-        run: locale
+        run: |
+          export LC_ALL=en_US.UTF-8
+          locale
       - name: CocoaPod Install
         run: pod install
       - name: Archiving project
