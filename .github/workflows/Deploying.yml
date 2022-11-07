@@ -18,19 +18,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pods-
       - name: Locale
-        run: |
-          export LC_ALL=en_US.UTF-8
-          locale
-      - name: Locale 2
         run: locale
       - name: CocoaPod Install
-        run: | 
-          export LC_ALL=en_US.UTF-8
-          pod install
+        run: pod install
       - name: Archiving project
-        run: |
-          export LC_ALL=en_US.UTF-8 
-          ./.github/scripts/archive_app.sh
+        run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
         run: ./.github/scripts/export_ipa.sh
       - name: Publishing app
