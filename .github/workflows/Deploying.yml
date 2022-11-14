@@ -23,8 +23,7 @@ jobs:
         KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
        run: ./.github/scripts/decrypt_secrets.sh
      - name: Release Notes
-      run: |
-        ./.github/scripts/release_notes.sh
+       run: ./.github/scripts/release_notes.sh
      - name: Retrieve Dependencies Cache
        uses: actions/cache@v3
        with:
