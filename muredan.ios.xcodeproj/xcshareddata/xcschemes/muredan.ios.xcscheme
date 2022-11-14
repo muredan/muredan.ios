@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BBE3592F291165CA006813D2"
-               BuildableName = "muredan.ios Dev.app"
+               BuildableName = "muredan.ios.app"
                BlueprintName = "muredan.ios"
                ReferencedContainer = "container:muredan.ios.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBE3592F291165CA006813D2"
-            BuildableName = "muredan.ios Dev.app"
+            BuildableName = "muredan.ios.app"
             BlueprintName = "muredan.ios"
             ReferencedContainer = "container:muredan.ios.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBE3592F291165CA006813D2"
-            BuildableName = "muredan.ios Dev.app"
+            BuildableName = "muredan.ios.app"
             BlueprintName = "muredan.ios"
             ReferencedContainer = "container:muredan.ios.xcodeproj">
          </BuildableReference>
