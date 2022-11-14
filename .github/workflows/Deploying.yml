@@ -16,11 +16,11 @@ jobs:
      - name: Checkout repository
        uses: actions/checkout@v1
      - name: Certificates
-        env:   
-         BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
-         P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
-         BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
-         KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+       env:
+        BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
+        P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+        BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
+        KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: ./.github/scripts/decrypt_secrets.sh
        uses: |
          ./.github/scripts/decrypt_secrets.sh
