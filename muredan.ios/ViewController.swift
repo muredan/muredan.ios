@@ -17,3 +17,33 @@ class ViewController: UIViewController {
 
 }
 
+enum Environment: String { // 1
+    case debugDevelopment = "Debug Development"
+    case releaseDevelopment = "Release Development"
+
+    case debugProduction = "Debug Production"
+    case releaseProduction = "Release Production"
+}
+
+class BuildConfiguration { // 2
+    static let shared = BuildConfiguration()
+
+    var environment: Environment
+
+    var baseURL: String { // 1
+        switch environment {
+        case .debugDevelopment, .releaseDevelopment:
+            return "https://dev.example.com/api"
+        case .debugProduction, .releaseProduction:
+            return "https://example.com/api"
+        }
+    }
+
+    init() {
+        let currentConfiguration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as! String
+
+        environment = Environment(rawValue: currentConfiguration)!
+        
+        print(environment)
+    }
+}

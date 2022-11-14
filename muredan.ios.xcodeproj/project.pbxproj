@@ -18,10 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A75E9864CAA10D713C23FA7 /* Pods-muredan.ios.debug development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.debug development.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.debug development.xcconfig"; sourceTree = "<group>"; };
+		6F84C098309F5F28233BC58C /* Pods-muredan.ios.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.release development.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.release development.xcconfig"; sourceTree = "<group>"; };
 		70ACBE8DD345A4F89D57B857 /* Pods-muredan.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.release.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.release.xcconfig"; sourceTree = "<group>"; };
 		BA8714706F2CDAFDDBBE823B /* Pods-muredan.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.debug.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.debug.xcconfig"; sourceTree = "<group>"; };
 		BB90BE6C2912A60B00D0B025 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
-		BBE35930291165CA006813D2 /* muredan.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muredan.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE35930291165CA006813D2 /* muredan.ios Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muredan.ios Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE35933291165CA006813D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBE35935291165CA006813D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BBE35937291165CA006813D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		BBE3593F291165CB006813D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE35941291165CB006813D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4186EEE5FA813FB269518C6 /* Pods_muredan_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_muredan_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D0A94187F67B87414EA75B /* Pods-muredan.ios.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.release production.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.release production.xcconfig"; sourceTree = "<group>"; };
+		E0E2A2C3FC29A0FD8130D275 /* Pods-muredan.ios.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.debug production.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.debug production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,10 @@
 			children = (
 				BA8714706F2CDAFDDBBE823B /* Pods-muredan.ios.debug.xcconfig */,
 				70ACBE8DD345A4F89D57B857 /* Pods-muredan.ios.release.xcconfig */,
+				2A75E9864CAA10D713C23FA7 /* Pods-muredan.ios.debug development.xcconfig */,
+				E0E2A2C3FC29A0FD8130D275 /* Pods-muredan.ios.debug production.xcconfig */,
+				6F84C098309F5F28233BC58C /* Pods-muredan.ios.release development.xcconfig */,
+				C6D0A94187F67B87414EA75B /* Pods-muredan.ios.release production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -74,7 +82,7 @@
 		BBE35931291165CA006813D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBE35930291165CA006813D2 /* muredan.ios.app */,
+				BBE35930291165CA006813D2 /* muredan.ios Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +121,7 @@
 			);
 			name = muredan.ios;
 			productName = muredan.ios;
-			productReference = BBE35930291165CA006813D2 /* muredan.ios.app */;
+			productReference = BBE35930291165CA006813D2 /* muredan.ios Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +246,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BBE35942291165CB006813D2 /* Debug */ = {
+		BB9AAD5C292240650039E83B /* Debug Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,9 +304,44 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug Production";
 		};
-		BBE35943291165CB006813D2 /* Release */ = {
+		BB9AAD5D292240650039E83B /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E2A2C3FC29A0FD8130D275 /* Pods-muredan.ios.debug production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = VQ5S8853A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = muredan.ios/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug Production";
+		};
+		BB9AAD5E2922407F0039E83B /* Release Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -350,11 +393,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release Production";
 		};
-		BBE35945291165CB006813D2 /* Debug */ = {
+		BB9AAD5F2922407F0039E83B /* Release Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA8714706F2CDAFDDBBE823B /* Pods-muredan.ios.debug.xcconfig */;
+			baseConfigurationReference = C6D0A94187F67B87414EA75B /* Pods-muredan.ios.release production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -385,11 +428,125 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = "Release Production";
 		};
-		BBE35946291165CB006813D2 /* Release */ = {
+		BBE35942291165CB006813D2 /* Debug Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70ACBE8DD345A4F89D57B857 /* Pods-muredan.ios.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Development";
+		};
+		BBE35943291165CB006813D2 /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Development";
+		};
+		BBE35945291165CB006813D2 /* Debug Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A75E9864CAA10D713C23FA7 /* Pods-muredan.ios.debug development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,8 +567,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios.dev";
+				PRODUCT_NAME = "$(TARGET_NAME) Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -420,7 +577,42 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = "Debug Development";
+		};
+		BBE35946291165CB006813D2 /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F84C098309F5F28233BC58C /* Pods-muredan.ios.release development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = VQ5S8853A4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = muredan.ios/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios.dev";
+				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release Development";
 		};
 /* End XCBuildConfiguration section */
 
@@ -428,20 +620,24 @@
 		BBE3592B291165CA006813D2 /* Build configuration list for PBXProject "muredan.ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBE35942291165CB006813D2 /* Debug */,
-				BBE35943291165CB006813D2 /* Release */,
+				BBE35942291165CB006813D2 /* Debug Development */,
+				BB9AAD5C292240650039E83B /* Debug Production */,
+				BBE35943291165CB006813D2 /* Release Development */,
+				BB9AAD5E2922407F0039E83B /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 		BBE35944291165CB006813D2 /* Build configuration list for PBXNativeTarget "muredan.ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBE35945291165CB006813D2 /* Debug */,
-				BBE35946291165CB006813D2 /* Release */,
+				BBE35945291165CB006813D2 /* Debug Development */,
+				BB9AAD5D292240650039E83B /* Debug Production */,
+				BBE35946291165CB006813D2 /* Release Development */,
+				BB9AAD5F2922407F0039E83B /* Release Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release Development";
 		};
 /* End XCConfigurationList section */
 	};
