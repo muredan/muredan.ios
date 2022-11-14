@@ -23,7 +23,7 @@
 		70ACBE8DD345A4F89D57B857 /* Pods-muredan.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.release.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.release.xcconfig"; sourceTree = "<group>"; };
 		BA8714706F2CDAFDDBBE823B /* Pods-muredan.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.debug.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.debug.xcconfig"; sourceTree = "<group>"; };
 		BB90BE6C2912A60B00D0B025 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
-		BBE35930291165CA006813D2 /* muredan.ios Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muredan.ios Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE35930291165CA006813D2 /* muredan.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muredan.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE35933291165CA006813D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBE35935291165CA006813D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BBE35937291165CA006813D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		BBE35931291165CA006813D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBE35930291165CA006813D2 /* muredan.ios Dev.app */,
+				BBE35930291165CA006813D2 /* muredan.ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 			);
 			name = muredan.ios;
 			productName = muredan.ios;
-			productReference = BBE35930291165CA006813D2 /* muredan.ios Dev.app */;
+			productReference = BBE35930291165CA006813D2 /* muredan.ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -567,8 +567,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios.dev";
-				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -602,8 +602,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios.dev";
-				PRODUCT_NAME = "$(TARGET_NAME) Dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "muredan.muredan-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
