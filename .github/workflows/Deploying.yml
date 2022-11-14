@@ -33,14 +33,14 @@ jobs:
        run: locale
      - name: CocoaPod Install
        run: pod install
-    #  - name: Archiving project
-    #    run: |
-    #      caffeinate ./.github/scripts/archive_app.sh
-    #  - name: Exporting .ipa
-    #    run: ./.github/scripts/export_ipa.sh
-    #  - name: Publishing app
-    #    if: success()
-    #    env:
-    #      APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
-    #      APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
-    #    run: ./.github/scripts/publish_testflight.sh
+     - name: Archiving project
+       run: |
+         caffeinate ./.github/scripts/archive_app.sh
+     - name: Exporting .ipa
+       run: ./.github/scripts/export_ipa.sh
+     - name: Publishing app
+       if: success()
+       env:
+         APPLEID_USERNAME: ${{ secrets.APPLEID_USERNAME }}
+         APPLEID_PASSWORD: ${{ secrets.APPLEID_PASSWORD }}
+       run: ./.github/scripts/publish_testflight.sh
