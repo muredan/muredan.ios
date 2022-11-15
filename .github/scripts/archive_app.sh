@@ -4,13 +4,13 @@ set -eo pipefail
 
 # create variables
 WORKSPACE=muredan.ios.xcworkspace
-SCHEME=muredan.ios\ "$CONFIGURATION"
+SCHEME=muredan.ios
 ARCHIVE_PATH=build/muredan.ios
 
 # buiild & archive
 xcodebuild -workspace $WORKSPACE \
             -allowProvisioningUpdates \
-            -scheme muredan.ios\ "$CONFIGURATION" \
+            -scheme $SCHEME\ "$CONFIGURATION" \
             -sdk iphoneos \
             -derivedDataPath build/DerivedData \
             -configuration Release\ "$CONFIGURATION" \
