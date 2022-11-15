@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A3BF4D1737A141CC2295C72 /* Pods_muredan_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4186EEE5FA813FB269518C6 /* Pods_muredan_ios.framework */; };
+		BB0129CF292381BC009D274E /* release_notes.json in Resources */ = {isa = PBXBuildFile; fileRef = BB0129CE292380EC009D274E /* release_notes.json */; };
 		BB90BE6D2912A60B00D0B025 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB90BE6C2912A60B00D0B025 /* ExportOptions.plist */; };
 		BBE35934291165CA006813D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE35933291165CA006813D2 /* AppDelegate.swift */; };
 		BBE35936291165CA006813D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE35935291165CA006813D2 /* SceneDelegate.swift */; };
@@ -167,6 +168,7 @@
 				BBE35940291165CB006813D2 /* LaunchScreen.storyboard in Resources */,
 				BBE3593D291165CB006813D2 /* Assets.xcassets in Resources */,
 				BBE3593B291165CA006813D2 /* Main.storyboard in Resources */,
+				BB0129CF292381BC009D274E /* release_notes.json in Resources */,
 				BB90BE6D2912A60B00D0B025 /* ExportOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
