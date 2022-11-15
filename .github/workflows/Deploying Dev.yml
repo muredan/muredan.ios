@@ -22,7 +22,7 @@ jobs:
         BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
        run: ./.github/scripts/decrypt_secrets.sh
      - name: CocoaPod Cache
-       if: always()
+       continue-on-error: true
        uses: actions/cache@v3
        with:
          path: Pods
