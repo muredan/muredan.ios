@@ -22,6 +22,7 @@
 		6F84C098309F5F28233BC58C /* Pods-muredan.ios.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.release development.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.release development.xcconfig"; sourceTree = "<group>"; };
 		70ACBE8DD345A4F89D57B857 /* Pods-muredan.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.release.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.release.xcconfig"; sourceTree = "<group>"; };
 		BA8714706F2CDAFDDBBE823B /* Pods-muredan.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-muredan.ios.debug.xcconfig"; path = "Target Support Files/Pods-muredan.ios/Pods-muredan.ios.debug.xcconfig"; sourceTree = "<group>"; };
+		BB0129CE292380EC009D274E /* release_notes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = release_notes.json; sourceTree = "<group>"; };
 		BB90BE6C2912A60B00D0B025 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
 		BBE35930291165CA006813D2 /* muredan.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muredan.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE35933291165CA006813D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				BBE3593E291165CB006813D2 /* LaunchScreen.storyboard */,
 				BBE35941291165CB006813D2 /* Info.plist */,
 				BB90BE6C2912A60B00D0B025 /* ExportOptions.plist */,
+				BB0129CE292380EC009D274E /* release_notes.json */,
 			);
 			path = muredan.ios;
 			sourceTree = "<group>";
