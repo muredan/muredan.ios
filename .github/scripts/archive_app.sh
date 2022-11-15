@@ -13,5 +13,5 @@ xcodebuild -workspace $WORKSPACE \
             -scheme $SCHEME \
             -sdk iphoneos \
             -derivedDataPath build/DerivedData \
-            -configuration Release\ Production \
+            -configuration Release\ "$CONFIGURATION" \
             -archivePath $ARCHIVE_PATH archive

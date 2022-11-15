@@ -9,7 +9,7 @@ env:
  LC_ALL: "en_US.UTF-8"
 jobs:
  deploy:
-   name: Deploying to Testflight
+   name: Deploying Development
    runs-on: macos-latest
    timeout-minutes: 30
    steps:
@@ -20,10 +20,7 @@ jobs:
         BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
         P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
         BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
-        KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
        run: ./.github/scripts/decrypt_secrets.sh
-    #  - name: Release Notes
-    #    run: ./.github/scripts/release_notes.sh
      - name: Retrieve Dependencies Cache
        uses: actions/cache@v3
        with:
@@ -36,6 +33,8 @@ jobs:
      - name: CocoaPod Install
        run: pod install
      - name: Archiving project
+       env: 
+        CONFIGURATION: "Development"
        run: |
          caffeinate ./.github/scripts/archive_app.sh
      - name: Exporting .ipa
