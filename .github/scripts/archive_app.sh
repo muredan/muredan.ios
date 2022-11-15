@@ -4,7 +4,7 @@ set -eo pipefail
 
 # create variables
 WORKSPACE=muredan.ios.xcworkspace
-SCHEME=muredan.ios
+SCHEME=muredan.ios\ "$CONFIGURATION"
 ARCHIVE_PATH=build/muredan.ios
 
 # buiild & archive
