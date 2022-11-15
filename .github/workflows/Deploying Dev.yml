@@ -28,7 +28,7 @@ jobs:
          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
          restore-keys: |
            ${{ runner.os }}-pods-
-        post-if: always()
+       post-if: always()
      - name: CocoaPod Install
        run: pod install
      - name: Archiving project
