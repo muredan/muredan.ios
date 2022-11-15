@@ -22,13 +22,13 @@ jobs:
         BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
        run: ./.github/scripts/decrypt_secrets.sh
      - name: CocoaPod Cache
-       post-if: always()
        uses: actions/cache@v3
        with:
          path: Pods
          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
          restore-keys: |
            ${{ runner.os }}-pods-
+        post-if: always()
      - name: CocoaPod Install
        run: pod install
      - name: Archiving project
