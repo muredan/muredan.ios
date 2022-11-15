@@ -11,7 +11,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view. 3
+        let text: String? = "salut"
+        guard let text else { return }
+        print(text)
     }
 
 
