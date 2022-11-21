@@ -7,6 +7,7 @@ env:
  LANG: "en_US.UTF-8"
  LANGUAGE: "en_US.UTF-8"
  LC_ALL: "en_US.UTF-8"
+ CONFIGURATION: "Development"
 jobs:
  deploy:
    name: Deploying Development
@@ -30,7 +31,9 @@ jobs:
          restore-keys: |
            ${{ runner.os }}-pods-
      - name: CocoaPod Install
-       run: pod install
+       run: |
+        echo "$CONFIGURATION"
+        pod install
      - name: Archiving project
        env: 
         CONFIGURATION: "Production"
